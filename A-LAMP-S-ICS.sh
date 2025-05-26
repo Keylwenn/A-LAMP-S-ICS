@@ -31,13 +31,6 @@
 # Variable definitions
 # Package list definition
 PACKAGES="openssh-server vsftpd apache2 mariadb-server php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip"
-# Configuration file paths definition
-CONFIG_FILES=(²
-    "/etc/ssh/sshd_config"
-    "/etc/vsftpd.conf"
-    "/etc/apache2/apache2.conf"
-    "/etc/mysql/mariadb.conf.d/50-server.cnf"
-)
 # Functions definitions
 # Check the shell being used
 check_shell() {

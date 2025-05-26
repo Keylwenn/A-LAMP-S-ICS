@@ -20,7 +20,7 @@
 #                       This script is intended to be used by lazy people who want to quickly set up a LAMP server without having to manually enter each command in the terminal.
 #                       This script is not intended to be used in production environments, but rather to facilitate the setup of a test environment.
 #                       This script is not intended to be used as a substitute for system administration knowledge, but rather to facilitate the setup of a test environment.
-#                       This script is originaly intended for educational purposes, specifically for students of the TSSR 2025 class at OFIAQ (TRAINING ORGANIZATION FOR INTEGRATION, SUPPORT, AND QUALIFICATION).
+#                       This script is originaly intended for educational, training and developement purposes.
 #                       This script should not be used as a substitute for system administration knowledge but rather to facilitate the setup of a test environment.
 #                       This Script automatically install and configures a LAMP server (Linux, Apache, MySQL/MariaDB, PHP) on a Debian-based distribution.
 #                       It is important to note that this script is intended for use in a test environment. It should not be used in production without prior testing.

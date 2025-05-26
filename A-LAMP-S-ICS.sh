@@ -5,7 +5,7 @@
 #
 # Script Name:          Automated LAMP Server Installation & Configuration Script
 # Creation Date:        05/26/2025
-# Version:              1.1
+# Version:              1.1.1+20250526
 # License:              CC BY-NC-SA 4.0 (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International) https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # Author Information and Contributions

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.sh": "shellscript"
+    },
+    "editor.formatOnSave": true,
+    "shellcheck.enable": true
+}

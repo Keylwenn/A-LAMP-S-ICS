@@ -5,7 +5,7 @@
 #
 # Script Name:          Automated LAMP Server Installation & Configuration Script
 # Creation Date:        05/26/2025
-# Version:              1.1.1+20250526
+# Version:              1.1.2+20250527
 # License:              CC BY-NC-SA 4.0 (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International) https://creativecommons.org/licenses/by-nc-sa/4.0/
 #
 # Author Information and Contributions
@@ -205,6 +205,27 @@ end_message() {
     read -r
     exit 0
 }
+# After obtaining root privileges, check if the script should continue at a specific step
+if [[ "$STEP_AFTER_ROOT" == "1" ]]; then
+    # Check if the system is debian-based
+    check_system_environment
+    # Prompt user answer
+    user_answer
+    # Check user acknowledgment
+    check_user_acknowledgment
+    # Test function for the script
+    #test_function
+    # Check for Repository updates
+    check_update
+    # Install required packages
+    install_packages
+    # Secure MariaDB installation
+    backup_config_files
+    # Configure services
+    configure_services
+    # Display end message
+    end_message
+fi
 # Main function to execute the script
 main() {
     # Check the shell being used
@@ -229,31 +250,6 @@ main() {
     configure_services
     # Display end message
     end_message
-    # End message
-    end_message
 }
-# After obtaining root privileges, check if the script should continue at a specific step
-if [[ "$STEP_AFTER_ROOT" == "1" ]]; then
-    # Check if the system is debian-based
-    check_system_environment
-    # Prompt user answer
-    user_answer
-    # Check user acknowledgment
-    check_user_acknowledgment
-    # Test function for the script
-    #test_function
-    # Check for Repository updates
-    check_update
-    # Install required packages
-    install_packages
-    # Secure MariaDB installation
-    backup_config_files
-    # Configure services
-    configure_services
-    # Display end message
-    end_message
-    # End message
-    end_message
-fi
 # Script Execution
 main
